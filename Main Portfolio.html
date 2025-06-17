@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Shazia - Portfolio</title>
+    <meta name="description" content="Computer Science(AIML) student passionate about creating impactful technology. View my projects, experience, and academic achievements.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'bounce-gentle': 'bounceGentle 2s infinite',
+                        'scale-in': 'scaleIn 0.2s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        bounceGentle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        scaleIn: {
+                            '0%': { transform: 'scale(0.95)' },
+                            '100%': { transform: 'scale(1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .skill-bar {
+            transition: width 2s ease-in-out;
+        }
+        
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 via-pink-50 to-fuchsia-100 min-h-screen">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 transition-all duration-300 bg-transparent">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold gradient-text">Shaik Shazia</div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-purple-600 font-medium transition-colors duration-200">About</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-purple-600 transition-colors duration-200">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-purple-600 transition-colors duration-200">Projects</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-purple-600 transition-colors duration-200">Experience</a>
+                    <a href="#achievements" class="nav-link text-gray-600 hover:text-purple-600 transition-colors duration-200">Achievements</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-purple-600 transition-colors duration-200">Contact</a>
+                </div>
+                
+                <a
+                    href="https://drive.google.com/file/d/1WXWzUEZ_N6TmCwoLiOrYXSayvDfJYZLK/view?usp=sharing"
+                    target="_blank"
+                    class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-200 flex items-center space-x-2"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 animate-fade-in">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium animate-bounce-gentle">
+                            <svg class="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            Available for Internships & Full-time Opportunities
+                        </div>
+                        
+                        <h1 class="text-5xl font-bold text-gray-900 leading-tight">
+                            Hi, I'm <span class="gradient-text">Shaik Shazia</span>
+                        </h1>
+                        
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            Computer Science student passionate about creating technology that makes a positive impact. 
+                            I combine technical expertise with design thinking to build solutions that truly matter.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">My Vision</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            To become an Artificial Intelligence and Machine Learning engineer who bridges the gap between complex technology and human needs, 
+                            creating products that are both technically excellent and genuinely useful for people's daily lives.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center space-x-2 text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Guntur, Andhra Pradesh, India</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                            <span>Student @ VVIT</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0h6m-6 0l-1 12a2 2 0 002 2h6a2 2 0 002-2L16 7"></path>
+                            </svg>
+                            <span>Graduating May 2027</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative animate-slide-up">
+                    <div class="relative w-80 h-80 mx-auto">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-600 rounded-3xl transform rotate-6"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-2xl">
+                            <img 
+                                src="Shazia Image.jpg"
+                                alt="Shaik Shazia"
+                                class="w-full h-64 object-cover rounded-2xl"
+                            />
+                            <div class="mt-4 text-center">
+                                <div class="text-sm text-gray-500">Currently Learning</div>
+                                <div class="text-lg font-semibold text-gray-900">Artificial Intelligence & Machine Learning</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Skills & Competencies</h2>
+                <p class="text-xl text-gray-600">A blend of technical expertise and essential soft skills</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-xl bg-yellow-500 text-white mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">C Programming</h3>
+                            <p class="text-gray-500 text-sm">60% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="h-2 rounded-full bg-yellow-500 skill-bar" data-width="60"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-xl bg-blue-500 text-white mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Python Programming</h3>
+                            <p class="text-gray-500 text-sm">85% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="h-2 rounded-full bg-blue-500 skill-bar" data-width="85"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-xl bg-pink-500 text-white mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">HTML</h3>
+                            <p class="text-gray-500 text-sm">95% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="h-2 rounded-full bg-pink-500 skill-bar" data-width="95"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-xl bg-green-500 text-white mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Java</h3>
+                            <p class="text-gray-500 text-sm">70% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="h-2 rounded-full bg-green-500 skill-bar" data-width="70"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-xl bg-red-500 text-white mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Team Leadership</h3>
+                            <p class="text-gray-500 text-sm">95% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="h-2 rounded-full bg-red-500 skill-bar" data-width="95"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-xl bg-green-500 text-white mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Artificial Intelligence</h3>
+                            <p class="text-gray-500 text-sm">95% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="h-2 rounded-full bg-green-500 skill-bar" data-width="95"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-xl bg-purple-500 text-white mr-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Machine Learning</h3>
+                            <p class="text-gray-500 text-sm">90% Proficiency</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="h-2 rounded-full bg-purple-500 skill-bar" data-width="90"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-600">Deep dives into my most impactful work</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-3xl overflow-hidden shadow-lg border border-gray-200 project-card">
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <div class="relative overflow-hidden">
+                            <img 
+                                src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Login Application"
+                                class="w-full h-64 lg:h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                    Academic Project
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Login Application</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center text-gray-600 text-sm space-x-4">
+                                    <span class="font-medium">Academic Project</span>
+                                    <span>•</span>
+                                    <span>5 months</span>
+                                </div>
+                                
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Challenge:</strong> Needed to build a secure login system as part of an academic requirement, focusing on user authentication, data handling, and a functional user interface.
+                                </p>
+                                
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Approach:</strong> Created a desktop-based login application using Python and Tkinter for the GUI, SQL for backend data storage, and implemented Unittest to ensure functionality and correctness of login logic and validation processes.
+                                </p>
+                                
+                                <div>
+                                    <strong class="text-gray-900">Skills Applied:</strong>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Tkinter</span>
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">SQL</span>
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Unittest</span>
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">UI Design</span>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Results:</strong> Successfully demonstrated in semester evaluation and earned a high grade, recognized for clean UI, secure database integration, and thorough testing.
+                                </p>
+                                
+                                <div class="flex space-x-4 pt-4">
+                                    <a 
+                                        href="https://github.com/Shazia-Shaik/Login-Application-" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center space-x-2 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                                    >
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>View Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-3xl overflow-hidden shadow-lg border border-gray-200 project-card">
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <div class="relative overflow-hidden">
+                            <img 
+                                src="https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                alt="Phone Number Validator"
+                                class="w-full h-64 lg:h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                    Professional Project
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Phone Number Validator</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center text-gray-600 text-sm space-x-4">
+                                    <span class="font-medium">Professional Project</span>
+                                    <span>•</span>
+                                    <span>1 month</span>
+                                </div>
+                                
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Challenge:</strong> Validating international phone numbers is complex due to varying formats, country codes, and invalid input patterns, especially in global applications.
+                                </p>
+                                
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Approach:</strong> Developed a responsive web application using ReactJS and integrated the libphonenumber-js library to validate phone numbers across all countries. Implemented light/dark mode, country detection, and error handling features.
+                                </p>
+                                
+                                <div>
+                                    <strong class="text-gray-900">Skills Applied:</strong>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">React</span>
+                                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Artificial Intelligence</span>
+                                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Azure Deployment</span>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-gray-700 leading-relaxed">
+                                    <strong>Results:</strong> Successfully validated 150+ international phone number formats with real-time feedback. The application was presented in the AI-Azure internship showcase and received positive feedback for usability and global reach support.
+                                </p>
+                                
+                                <div class="flex space-x-4 pt-4">
+                                    <a 
+                                        href="https://app.netlify.com/projects/shaziaphonenumbervalidator/overview" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center space-x-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition-colors"
+                                    >
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                        <span>Live Demo</span>
+                                    </a>
+                                    <a 
+                                        href="https://github.com/Shazia-Shaik/Phone-Number-Validator?tab=readme-ov-file#phone-number-validator" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center space-x-2 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                                    >
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>View Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+                <p class="text-xl text-gray-600">Building real-world skills through meaningful work</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 project-card">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Microsoft AI-Azure Intern</h3>
+                            <p class="text-lg text-purple-600 font-medium">Edunet Foundation</p>
+                        </div>
+                        <div class="text-gray-600 text-sm mt-2 md:mt-0 md:text-right">
+                            <div>Summer 2025</div>
+                            <div class="flex items-center mt-1">
+                                <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Remote India
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 leading-relaxed mb-4">During my AI Azure internship, I developed an International Phone Number Validator using Python and machine learning tools. This project enhanced my skills in data validation, regular expressions, and integrating AI-powered solutions on Microsoft Azure.</p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Validation</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Artificial Intelligence</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Azure Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Achievements</h2>
+                <p class="text-xl text-gray-600">Recognition for excellence and growth</p>
+            </div>
+
+            <div class="relative">
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-purple-200"></div>
+                
+                <div class="space-y-8">
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                        
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8">
+                            <div class="bg-gray-50 rounded-2xl p-6 shadow-lg border border-gray-200">
+                                <div class="text-purple-600 font-bold text-sm mb-2">2023-2025</div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Academic Performance</h3>
+                                <p class="text-gray-600">Achieved 7.4 GPA upto my 3rd Semester</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                        
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:ml-auto md:pl-8">
+                            <div class="bg-gray-50 rounded-2xl p-6 shadow-lg border border-gray-200">
+                                <div class="text-purple-600 font-bold text-sm mb-2">2024</div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Gen AI by Google Cloud</h3>
+                                <p class="text-gray-600">Gained hands-on experience with generative models, prompt design, and deployment using Vertex AI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                        
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8">
+                            <div class="bg-gray-50 rounded-2xl p-6 shadow-lg border border-gray-200">
+                                <div class="text-purple-600 font-bold text-sm mb-2">2024</div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">HCL Tech Learnathon</h3>
+                                <p class="text-gray-600">Successfully participated and certified in a national-level tech marathon focused on emerging technologies, problem-solving, and hands-on learning challenges.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                        
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:ml-auto md:pl-8">
+                            <div class="bg-gray-50 rounded-2xl p-6 shadow-lg border border-gray-200">
+                                <div class="text-purple-600 font-bold text-sm mb-2">2024</div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Python Zero to Hero</h3>
+                                <p class="text-gray-600">Completed an in-depth course covering Python fundamentals to advanced concepts, including data structures, OOP, and real-world problem-solving in GUVI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center">
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                        
+                        <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8">
+                            <div class="bg-gray-50 rounded-2xl p-6 shadow-lg border border-gray-200">
+                                <div class="text-purple-600 font-bold text-sm mb-2">2025</div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Microsoft Power BI</h3>
+                                <p class="text-gray-600">Gained practical experience in data visualization, DAX functions, and dashboard creation using Microsoft Power BI tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-600 to-pink-700">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
+            <p class="text-xl text-purple-100 mb-8">
+                I'm always excited to discuss new opportunities, collaborate on projects, or just chat about technology and innovation.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a 
+                    href="mailto:shaziashaik2005@gmail.com"
+                    class="flex items-center justify-center space-x-2 border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600 transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Email</span>
+                </a>
+                <a 
+                    href="https://www.linkedin.com/in/shaziashaik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center space-x-2 border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600 transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a 
+                    href="https://github.com/Shazia-Shaik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center space-x-2 border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-600 transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            
+            <div class="inline-flex items-center space-x-2 text-purple-100">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+                <span>Open to internships, full-time opportunities, and collaboration</span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-effect');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('glass-effect');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = ['about', 'skills', 'projects', 'experience', 'achievements', 'contact'];
+            const scrollPosition = window.scrollY + 100;
+
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const navLink = document.querySelector(`a[href="#${sectionId}"]`);
+                
+                if (section && navLink) {
+                    const { offsetTop, offsetHeight } = section;
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        // Remove active class from all nav links
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            link.classList.remove('text-purple-600', 'font-medium');
+                            link.classList.add('text-gray-600');
+                        });
+                        // Add active class to current nav link
+                        navLink.classList.remove('text-gray-600');
+                        navLink.classList.add('text-purple-600', 'font-medium');
+                    }
+                }
+            });
+        });
+
+        // Animate skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width + '%';
+                        }, 200);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe skills section
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) {
+            observer.observe(skillsSection);
+        }
+
+        // Initialize skill bars width to 0
+        document.querySelectorAll('.skill-bar').forEach(bar => {
+            bar.style.width = '0%';
+        });
+    </script>
+</body>
+</html>
